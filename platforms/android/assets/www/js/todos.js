@@ -157,7 +157,7 @@ $(function() {
 	
 	popup: function() {
 		//alert("pop");
-		
+		//if (this.$el.) {}
 		alert(this.model.get('moreInfo'));		
 
 	},
@@ -241,6 +241,7 @@ $(function() {
     // Toggle the `"done"` state of the model.
     toggleDone: function() {
    		this.model.finish();
+		//$(this.el).children('.view').removeClass('view');
 		$(this.el).removeClass('assigned');
 		
 		//this.model.tincanCreate();
@@ -335,7 +336,7 @@ $(function() {
 
 	//MK added QR scanning
 	scanQR: function() {
-		if (!window.cordova) {alert("nope")}
+		if (!window.cordova) {alert("Sorry, this needs the mobile app to access the QR reader.")}
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
 				var scanQRText = result.text,
@@ -347,7 +348,10 @@ $(function() {
 					//var qrItemText = qrItems[i].innerHTML;
 					var qrItemText = qrItems[i].value;
 					if (scanQRText === qrItemText) {
-						qrListItem[i].click();
+//						console.log(this.$(".qr")[i].children.item(1));
+//						var viewDiv = this.$(".qr")[i].children.item(1);
+//						viewDiv.parent().removeClass('view');
+						qrListItem[i].click(function(e) {e.stopPropagation();});
 						
 					}				
 				};
