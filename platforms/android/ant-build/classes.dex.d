@@ -1,51 +1,51 @@
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes.dex : \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$1.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$2.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$3.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$4.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$5.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$6.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$7.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$8.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$9.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\Util.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\phonegap\plugins\barcodescanner\BarcodeScanner.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\BuildConfig.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\CordovaApp.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$array.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$attr.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$color.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$dimen.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$drawable.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$id.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$layout.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$menu.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$raw.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$string.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$xml.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\api\Dummy.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$1.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$2$1.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$2$2.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$2.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3$1.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3$2.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3$3.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3$4.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4$1.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4$2.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4$3.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4$4.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$5$1.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$5.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$6$1.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$6.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\vibration\Vibration.class \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\dexedLibs\classes-7b1579d16aa0e3a612d4663559ed0b0b.jar \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\dexedLibs\com.google.zxing.client.android.captureactivity-3de747b47f7098f07b7b501ce705fadf.jar \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes.dex : \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$1.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$2.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$3.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$4.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$5.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$6.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$7.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$8.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin$9.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\NfcPlugin.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\chariotsolutions\nfc\plugin\Util.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\phonegap\plugins\barcodescanner\BarcodeScanner.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\BuildConfig.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\CordovaApp.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$array.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$attr.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$color.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$dimen.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$drawable.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$id.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$layout.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$menu.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$raw.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$string.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R$xml.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\com\torrancelearning\xapignome\R.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\api\Dummy.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$1.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$2$1.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$2$2.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$2.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3$1.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3$2.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3$3.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3$4.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$3.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4$1.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4$2.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4$3.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4$4.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$4.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$5$1.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$5.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$6$1.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$6.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\classes\org\apache\cordova\vibration\Vibration.class \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\dexedLibs\classes-14b6d9c4c687119d5fe17db1e9499f59.jar \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\dexedLibs\com.google.zxing.client.android.captureactivity-fdb31ab36b11cbe856a7b7e2bf94a521.jar \

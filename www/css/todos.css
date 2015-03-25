@@ -94,6 +94,10 @@ body {
 	color:rgba(255,255,255,1.00);
 }
 
+#todoapp .content #user-info #userSpan{
+	padding-right: 5px;
+}
+
 #todoapp .content #user-info .signed-in {
 	float:right;
 	padding-top:6px;
@@ -501,6 +505,16 @@ body {width: 70%;}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 body {width: 100%;}
+#todoapp .content #user-info #userSpan{
+	position:absolute;
+	right: 15px;
+	top: 7px;
+}
+
+#todoapp .content #user-info .signed-in {
+	padding-top:14px;
+}
+
 }
 
 /*

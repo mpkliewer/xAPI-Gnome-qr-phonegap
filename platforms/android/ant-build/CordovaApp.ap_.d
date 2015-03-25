@@ -1,135 +1,196 @@
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\CordovaApp.ap_ \
- : K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable\icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable\launcher_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable\share_via_barcode.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable\shopper_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-hdpi\launcher_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-hdpi\shopper_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-land-hdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-land-ldpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-land-mdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-land-xhdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-port-hdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-port-ldpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-port-mdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-port-xhdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-xhdpi\launcher_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-xxhdpi\launcher_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\bookmark_picker_list_item.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\capture.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\encode.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\help.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\history_list_item.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\search_book_contents.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\search_book_contents_header.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\search_book_contents_list_item.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\share.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout-land\encode.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout-land\share.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\layout-ldpi\capture.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\menu\capture.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\menu\encode.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\menu\history.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\raw\beep.ogg \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values\arrays.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values\colors.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values\dimens.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values\ids.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ar\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-bg\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ca\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-cs\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-da\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-de\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-el\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-es\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-eu\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-fi\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-fr\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-he\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-hi\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-hu\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-id\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-it\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-iw\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ja\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ko\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-nl\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-pl\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-pt\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ru\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-sk\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-sl\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-sv\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-tr\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-zh-rCN\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\values-zh-rTW\strings.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\xml\config.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\res\xml\preferences.xml \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable\icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable\launcher_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable\share_via_barcode.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable\shopper_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-hdpi\launcher_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-hdpi\shopper_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-land-hdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-land-ldpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-land-mdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-land-xhdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-port-hdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-port-ldpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-port-mdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-port-xhdpi\screen.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-xhdpi\launcher_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-xxhdpi\launcher_icon.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\_where-is-www.txt \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\cordova.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\cordova_plugins.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\images \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\index.html \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\LICENSE \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\README.markdown \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\base.css \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\index.css \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\old \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\todos.css \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\old\index - Copy.css \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\old\index_old.css \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\images\bg.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\images\destroy.png \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\images\spinner.gif \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\Autolinker.min.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\base.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\jquery.sortable.min.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\nfc.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\todos - Copy - noNFC.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\todos.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\underscore.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs\tincan-min.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs\tincan-min.map \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs\tincan-node.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs\tincan.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.chariotsolutions.nfc.plugin \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.phonegap.plugins.barcodescanner \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.device \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.vibration \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.chariotsolutions.nfc.plugin\www \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.chariotsolutions.nfc.plugin\www\phonegap-nfc.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.phonegap.plugins.barcodescanner\www \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\notification.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android\notification.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www\vibration.js \
-K:\Libraries\GitHub\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\AndroidManifest.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\CordovaApp.ap_ \
+ : C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable\icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable\launcher_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable\share_via_barcode.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable\shopper_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-hdpi\launcher_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-hdpi\shopper_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-land-hdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-land-ldpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-land-mdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-land-xhdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-port-hdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-port-ldpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-port-mdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-port-xhdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-xhdpi\launcher_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\drawable-xxhdpi\launcher_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\bookmark_picker_list_item.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\capture.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\encode.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\help.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\history_list_item.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\search_book_contents.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\search_book_contents_header.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\search_book_contents_list_item.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout\share.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout-land\encode.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout-land\share.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\layout-ldpi\capture.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\menu\capture.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\menu\encode.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\menu\history.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\raw\beep.ogg \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values\arrays.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values\colors.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values\dimens.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values\ids.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ar\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-bg\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ca\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-cs\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-da\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-de\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-el\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-es\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-eu\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-fi\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-fr\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-he\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-hi\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-hu\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-id\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-it\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-iw\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ja\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ko\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-nl\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-pl\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-pt\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-ru\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-sk\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-sl\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-sv\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-tr\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-zh-rCN\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\values-zh-rTW\strings.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\xml\config.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\res\xml\preferences.xml \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable\icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable\launcher_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable\share_via_barcode.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable\shopper_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-hdpi\launcher_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-hdpi\shopper_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-land-hdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-land-ldpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-land-mdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-land-xhdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-port-hdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-port-ldpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-port-mdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-port-xhdpi\screen.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-xhdpi\launcher_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\res\drawable-xxhdpi\launcher_icon.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\_where-is-www.txt \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\cordova.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\cordova_plugins.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\images \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\index.html \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\LICENSE \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\README.markdown \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\fonts \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\css\bootstrap-theme.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\css\bootstrap-theme.css.map \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\css\bootstrap-theme.min.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\css\bootstrap.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\css\bootstrap.css.map \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\css\bootstrap.min.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\fonts\glyphicons-halflings-regular.eot \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\fonts\glyphicons-halflings-regular.svg \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\fonts\glyphicons-halflings-regular.ttf \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\fonts\glyphicons-halflings-regular.woff \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\fonts\glyphicons-halflings-regular.woff2 \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\js\bootstrap.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\js\bootstrap.min.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\bootstrap\js\npm.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\base.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\index.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\old \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\todos.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\fonts \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\css\font-awesome.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\css\font-awesome.min.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\fonts\fontawesome-webfont.eot \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\fonts\fontawesome-webfont.svg \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\fonts\fontawesome-webfont.ttf \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\fonts\fontawesome-webfont.woff \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\fonts\fontawesome-webfont.woff2 \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\fonts\FontAwesome.otf \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\animated.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\bordered-pulled.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\core.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\fixed-width.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\font-awesome.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\icons.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\larger.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\list.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\mixins.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\path.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\rotated-flipped.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\stacked.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\less\variables.less \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\font-awesome.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_animated.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_bordered-pulled.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_core.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_fixed-width.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_icons.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_larger.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_list.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_mixins.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_path.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_rotated-flipped.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_stacked.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\font-awesome\scss\_variables.scss \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\old\index - Copy.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\css\old\index_old.css \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\images\bg.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\images\destroy.png \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\images\spinner.gif \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\Autolinker.min.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\base.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\jquery \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\jquery.sortable.min.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\nfc.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\parse-1.3.5.min.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\todos - Copy - noNFC.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\todos.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\underscore.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\jquery\jquery-2.1.3.min.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\jquery\jquery-2.1.3.min.map \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs\tincan-min.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs\tincan-min.map \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs\tincan-node.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\js\tincanjs\tincan.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.chariotsolutions.nfc.plugin \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.phonegap.plugins.barcodescanner \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.device \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.vibration \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.chariotsolutions.nfc.plugin\www \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.chariotsolutions.nfc.plugin\www\phonegap-nfc.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.phonegap.plugins.barcodescanner\www \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\notification.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.dialogs\www\android\notification.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\assets\www\plugins\org.apache.cordova.vibration\www\vibration.js \
+C:\Users\mkliewer\Google Drive\xAPI Gnome\xAPI-Gnome-qr-phonegap\platforms\android\ant-build\AndroidManifest.xml \

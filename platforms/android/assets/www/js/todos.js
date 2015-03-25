@@ -48,7 +48,7 @@ $(function() {
     },
 
     // Toggle the `done` state of this todo item.
-    toggle: function() {
+    finish: function() {
       this.save({done: !this.get("done")});
     }
 	, //MK added
@@ -137,46 +137,91 @@ $(function() {
 
     // The DOM events specific to an item.
     events: {
-      "click .toggle"              		: "toggleDone",
+      "click .finishBtn"              	: "toggleDone",
+      "click .view"             		: "popup",
       //"dblclick label.todo-content" 	: "edit",
-      "click .todo-destroy"   			: "clear",
-      "keypress .edit"      			: "updateOnEnter",
-      "blur .edit"          			: "close"
+      //"click .todo-destroy"   			: "clear",
+      //"keypress .edit"      			: "updateOnEnter",
+      //"blur .edit"          			: "close"
     },
 	
     // The TodoView listens for changes to its model, re-rendering. Since there's
     // a one-to-one correspondence between a Todo and a TodoView in this
     // app, we set a direct reference on the model for convenience.
     initialize: function() {
-      _.bindAll(this, 'render', 'close', 'remove');
+ //     _.bindAll(this, 'render', 'close', 'remove');
+      _.bindAll(this, 'render', 'remove');
       this.model.bind('change', this.render);
       this.model.bind('destroy', this.remove);
     },
+	
+	popup: function() {
+		//alert("pop");
+		
+		alert(this.model.get('moreInfo'));		
 
+	},
+	
     // Re-render the contents of the todo item.
     render: function() {
       $(this.el).html(this.template(this.model.toJSON()));
-      this.input = this.$('.edit');
+      //this.input = this.$('.edit');
 	  
 	  // $('.sortable').sortable(); // MK added (jquery.sortable.js) - may be nice at some point to manually sort items...
 	  
-	  //MK added - assigns classes to items flagged "true" in Parse. Makes it easier to target.
-		if (this.model.get('QR')===true) {
-			$(this.el).addClass("qr");
-			this.$(".unique").val(this.model.get('uniqueID')); //uniqueID
-			//console.log(this.model.get('content'));
+//		if (this.model.get('QR')===true) {
+//			this.$(".unique").val(this.model.get('uniqueID')); //uniqueID
+//			//console.log(this.model.get('content'));
+//		}
+		
+	  //MK added - assigns classes to items flagged "true" in Parse for styling and JS hooks.
+		var classes = {
+         	"done": "completed",
+        	"assigned": "assigned",
+   			"QR": "qr",
+		};
+	
+		for (var key in classes) {
+			if (classes.hasOwnProperty(key)) {
+				if (this.model.get(key)===true) {
+					if (key==="done") {
+						$(this.el).addClass(classes[key]);
+						break; // only add "completed" class and break out of loop
+					}
+					else if (key==="QR") {
+						this.$(".unique").val(this.model.get('uniqueID'));	//assign hidden input value to Parse uniqueID value
+						$(this.el).addClass(classes[key]);
+					}
+					else {
+						$(this.el).addClass(classes[key]);
+					}
+				}
+			}
 		}
 		
-		if (this.model.get('assigned')===true) { 
-			$(this.el).addClass("assigned");
+		if (this.model.get('assigned')===false) { // MK - I could also add a column in Parse for manual items, I suppose...
+			if (this.model.get('done')===false) {
+//				var manualCheck = document.createElement('input');
+//				$('div.view').append(manualCheck);
+				$('<input>').attr({type:'checkbox', class:'finishBtn'}).appendTo(this.el);
+				//$(this.el).addClass("finishBtn");
+			}
 		}
+
+		
+//		if (this.model.get('done')===true) { 
+//			$(this.el).addClass("completed");
+//		}		
+//		if (this.model.get('assigned')===true) { 
+//			$(this.el).addClass("assigned");
+//		}
 		
 	  //MK added - disables manual completion of assigned items
-		if (this.model.get('assigned')===true || this.model.get('done')===true) { 
-			this.$('.toggle').remove();
-			this.$('.todo-destroy').remove();
-		}
-		else {}	
+//		if (this.model.get('assigned')===true || this.model.get('done')===true) { 
+//			this.$('.finishBtn').remove();
+//			this.$('.todo-destroy').remove();
+//		}
+//		else {}	
 
 		//MK added - converts URLs in strings to actual links using Autolinker.js
 		var autolinker = new Autolinker( {
@@ -191,38 +236,40 @@ $(function() {
 		//console.log($(this.el).html());
 		
       return this;
-    },
+    }, // end render function
 	
     // Toggle the `"done"` state of the model.
     toggleDone: function() {
-   		this.model.toggle();
+   		this.model.finish();
+		$(this.el).removeClass('assigned');
+		
 		//this.model.tincanCreate();
     },
 
     // Switch this view into `"editing"` mode, displaying the input field.
-    edit: function() {
-		if (this.model.get('assigned')===false) { //MK added to allow editing manual items, but disable for assigned items
-	      $(this.el).addClass("editing");
-    	  this.input.focus();
-		}
-		else {}
-    },
+//    edit: function() {
+//		if (this.model.get('assigned')===false) { //MK added to allow editing manual items, but disable for assigned items
+//	      $(this.el).addClass("editing");
+//    	  this.input.focus();
+//		}
+//		else {}
+//    },
 
     // Close the `"editing"` mode, saving changes to the todo.
-    close: function() {
-      this.model.save({content: this.input.val()});
-      $(this.el).removeClass("editing");
-    },
+//    close: function() {
+//      this.model.save({content: this.input.val()});
+//      $(this.el).removeClass("editing");
+//    },
 
     // If you hit `enter`, we're through editing the item.
-    updateOnEnter: function(e) {
-      if (e.keyCode == 13) this.close();
-    },
+//    updateOnEnter: function(e) {
+//      if (e.keyCode == 13) this.close();
+//    },
 
     // Remove the item, destroy the model.
-    clear: function() {
-      this.model.destroy();
-    },
+//    clear: function() {
+//      this.model.destroy();
+//    },
 
   });
 
@@ -237,10 +284,11 @@ $(function() {
 
     // Delegated events for creating new items, and clearing completed ones.
     events: {
-	  "click .startScan"		: "scanQR", // MK added
-      "keypress #new-todo"		: "createOnEnter",
-      "click #clear-completed"	: "clearCompleted",
-      "click #toggle-all"		: "toggleAllComplete",
+	  "click #startScan"		: "scanQR", // MK added
+	  "click #refreshBtn"		: "refreshData", // MK added
+      //"keypress #new-todo"		: "createOnEnter",
+      //"click #clear-completed"	: "clearCompleted",
+      //"click #toggle-all"		: "toggleAllComplete",
       "click .log-out"			: "logOut",
       "click ul#filters a"		: "selectFilter"
     },
@@ -253,14 +301,16 @@ $(function() {
     initialize: function() {
       var self = this;
 
-      _.bindAll(this, 'scanQR', 'addOne', 'addAll', 'addSome', 'render', 'toggleAllComplete', 'logOut', 'createOnEnter');
+//      _.bindAll(this, 'scanQR', 'refreshData', 'addOne', 'addAll', 'addSome', 'render', 'toggleAllComplete', 'logOut', 'createOnEnter');
+      _.bindAll(this, 'scanQR', 'refreshData', 'addOne', 'addAll', 'addSome', 'render', 'logOut');
 
       // Main todo management template
       this.$el.html(_.template($("#manage-todos-template").html()));
       
+	  $('.title h1').html(Parse.User.current().attributes.username + "'s checklist");
 	  
-      this.input = this.$("#new-todo");
-      this.allCheckbox = this.$("#toggle-all")[0];
+      //this.input = this.$("#new-todo");
+      //this.allCheckbox = this.$("#toggle-all")[0];
 
       // Create our collection of Todos
       this.todos = new TodoList;
@@ -282,26 +332,33 @@ $(function() {
 				
 				
     }, // end initialize
-	
+
 	//MK added QR scanning
 	scanQR: function() {
+		if (!window.cordova) {alert("nope")}
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
 				var scanQRText = result.text,
-					qrListItem = this.$(".qr .edit").addClass('toggle'),
+					qrListItem = this.$(".qr p").addClass('finishBtn'),
 					//qrItems = this.$(".qr .todo-content");
 					qrItems = this.$(".qr .unique");
+					//alert(qrListItem);
 				for (i=0; i < qrItems.length; i++) {
 					//var qrItemText = qrItems[i].innerHTML;
 					var qrItemText = qrItems[i].value;
 					if (scanQRText === qrItemText) {
 						qrListItem[i].click();
+						
 					}				
 				};
 			}, 
 			function (error) { alert("Scanning failed: " + error); }		
 		);
 	},	
+	
+	refreshData: function() {
+		this.initialize();
+	},
 	
     // Logs out the user and shows the login view
     logOut: function(e) {
@@ -325,7 +382,7 @@ $(function() {
 
       this.delegateEvents();
 
-      this.allCheckbox.checked = !remaining;
+      //this.allCheckbox.checked = !remaining;
     },
 
     // Filters the list based on which type of filter is selected
@@ -377,35 +434,35 @@ $(function() {
     },
 
     // If you hit return in the main input field, create new Todo model
-    createOnEnter: function(e) {
-      var self = this;
-	  var username = Parse.User.current().attributes.username; //MK added
-      if (e.keyCode != 13) return;
-
-      this.todos.create({
-		assigned:  false, //MK added
-		name: 	 username, //MK added
-        content: this.input.val(),
-        order:   this.todos.nextOrder(),
-        done:    false,
-        user:    Parse.User.current(),
-        ACL:     new Parse.ACL(Parse.User.current())
-      });
-
-      this.input.val('');
-      this.resetFilters();
-    },
+//    createOnEnter: function(e) {
+//      var self = this;
+//	  var username = Parse.User.current().attributes.username; //MK added
+//      if (e.keyCode != 13) return;
+//
+//      this.todos.create({
+//		assigned:  false, //MK added
+//		name: 	 username, //MK added
+//        content: this.input.val(),
+//        order:   this.todos.nextOrder(),
+//        done:    false,
+//        user:    Parse.User.current(),
+//        ACL:     new Parse.ACL(Parse.User.current())
+//      });
+//
+//      this.input.val('');
+//      this.resetFilters();
+//    },
 
     // Clear all done todo items, destroying their models.
-    clearCompleted: function() {
-      _.each(this.todos.done(), function(todo){ todo.destroy(); });
-      return false;
-    },
-
-    toggleAllComplete: function () {
-//      var done = this.allCheckbox.checked;
-//      this.todos.each(function (todo) { todo.save({'done': done}); });
-    }
+//    clearCompleted: function() {
+//      _.each(this.todos.done(), function(todo){ todo.destroy(); });
+//      return false;
+//    },
+//
+//    toggleAllComplete: function () {
+////      var done = this.allCheckbox.checked;
+////      this.todos.each(function (todo) { todo.save({'done': done}); });
+//    }
   });
 
   var LogInView = Parse.View.extend({

@@ -137,7 +137,8 @@ $(function() {
 
     // The DOM events specific to an item.
     events: {
-      "click .finishBtn"              		: "toggleDone",
+      "click .finishBtn"              	: "toggleDone",
+      "click .view"             		: "popup",
       //"dblclick label.todo-content" 	: "edit",
       //"click .todo-destroy"   			: "clear",
       //"keypress .edit"      			: "updateOnEnter",
@@ -153,7 +154,14 @@ $(function() {
       this.model.bind('change', this.render);
       this.model.bind('destroy', this.remove);
     },
+	
+	popup: function() {
+		//alert("pop");
+		
+		alert(this.model.get('moreInfo'));		
 
+	},
+	
     // Re-render the contents of the todo item.
     render: function() {
       $(this.el).html(this.template(this.model.toJSON()));
@@ -161,27 +169,37 @@ $(function() {
 	  
 	  // $('.sortable').sortable(); // MK added (jquery.sortable.js) - may be nice at some point to manually sort items...
 	  
-		if (this.model.get('QR')===true) {
-			this.$(".unique").val(this.model.get('uniqueID')); //uniqueID
-			//console.log(this.model.get('content'));
-		}
+//		if (this.model.get('QR')===true) {
+//			this.$(".unique").val(this.model.get('uniqueID')); //uniqueID
+//			//console.log(this.model.get('content'));
+//		}
 		
-	  //MK added - assigns classes to items flagged "true" in Parse. Makes it easier to target.
+	  //MK added - assigns classes to items flagged "true" in Parse for styling and JS hooks.
 		var classes = {
-    		"QR": "qr",
-        	"done": "completed",
-        	"assigned": "assigned"
+         	"done": "completed",
+        	"assigned": "assigned",
+   			"QR": "qr",
 		};
 	
 		for (var key in classes) {
 			if (classes.hasOwnProperty(key)) {
-				if (this.model.get(key)===true) { 
-					$(this.el).addClass(classes[key]);
+				if (this.model.get(key)===true) {
+					if (key==="done") {
+						$(this.el).addClass(classes[key]);
+						break; // only add "completed" class and break out of loop
+					}
+					else if (key==="QR") {
+						this.$(".unique").val(this.model.get('uniqueID'));	//assign hidden input value to Parse uniqueID value
+						$(this.el).addClass(classes[key]);
+					}
+					else {
+						$(this.el).addClass(classes[key]);
+					}
 				}
 			}
 		}
 		
-		if (this.model.get('assigned')===false) { 
+		if (this.model.get('assigned')===false) { // MK - I could also add a column in Parse for manual items, I suppose...
 			if (this.model.get('done')===false) {
 //				var manualCheck = document.createElement('input');
 //				$('div.view').append(manualCheck);
@@ -218,11 +236,13 @@ $(function() {
 		//console.log($(this.el).html());
 		
       return this;
-    },
+    }, // end render function
 	
     // Toggle the `"done"` state of the model.
     toggleDone: function() {
    		this.model.finish();
+		$(this.el).removeClass('assigned');
+		
 		//this.model.tincanCreate();
     },
 
@@ -312,20 +332,23 @@ $(function() {
 				
 				
     }, // end initialize
-	
+
 	//MK added QR scanning
 	scanQR: function() {
+		if (!window.cordova) {alert("nope")}
 		cordova.plugins.barcodeScanner.scan(
 			function (result) {
 				var scanQRText = result.text,
-					qrListItem = this.$(".qr .edit").addClass('toggle'),
+					qrListItem = this.$(".qr p").addClass('finishBtn'),
 					//qrItems = this.$(".qr .todo-content");
 					qrItems = this.$(".qr .unique");
+					//alert(qrListItem);
 				for (i=0; i < qrItems.length; i++) {
 					//var qrItemText = qrItems[i].innerHTML;
 					var qrItemText = qrItems[i].value;
 					if (scanQRText === qrItemText) {
 						qrListItem[i].click();
+						
 					}				
 				};
 			}, 
