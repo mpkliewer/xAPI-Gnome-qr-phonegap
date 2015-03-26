@@ -62,6 +62,7 @@ var nfcApp = {
         
         //console.log("onNdef string: " + JSON.stringify(nfcEvent.tag));
         //console.log("onNdef: " + JSON.stringify(nfcEvent.tag.ndefMessage[0]));
+        navigator.notification.vibrate(100);        
 		uniqueID = decodePayload(nfcEvent.tag.ndefMessage[0]);
 		alert(uniqueID);
 //        nfcApp.clearScreen();
@@ -77,7 +78,6 @@ var nfcApp = {
 
 //        tagContents.innerHTML = nfcApp.tagTemplate(tag);
 
-        navigator.notification.vibrate(100);        
     },
 //    clearScreen: function () {
 //        
