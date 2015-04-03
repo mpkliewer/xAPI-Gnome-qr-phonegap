@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dweet test</title>
+<script src="www/js/dweet.io.min.js"></script>
+<script>
+function sendDweet(dweetContent) {
+	dweetio.dweet_for("dweet-test", {something:dweetContent}, function(err, dweet){
+  
+	console.log(dweet.thing); // "my-thing"
+	console.log(dweet.content); // The content of the dweet
+	console.log(dweet.created); // The create date of the dweet
+  });
+}
+
+function showDweets() {
+  dweetio.listen_for("dweet-test", function(dweet){
+	console.log(dweet);
+	document.getElementById('new-dweets').innerHTML= dweet.content.something;  
+  });
+}
+
+</script>
+
+</head>
+
+<body onLoad="showDweets()">
+<input type="text" placeholder="enter dweet here" id="dweet-text" />
+<button onClick="sendDweet(document.getElementById('dweet-text').value)">DWEET</button>
+<div id="new-dweets">new dweets will appear here</div>
+<img src="https://chart.googleapis.com/chart?chs=200x200&amp;cht=qr&amp;chl=http://www.berriart.com/sidr/" />
+
+
+</body>
+</html>

@@ -20,3 +20,12 @@
 # view AndroidManifest.xml #generated:6
 -keep class com.torrancelearning.xapignome.CordovaApp { <init>(...); }
 
+# view AndroidManifest.xml #generated:38
+-keep class org.altbeacon.beacon.BeaconIntentProcessor { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class org.altbeacon.beacon.service.BeaconService { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class org.altbeacon.beacon.startup.StartupBroadcastReceiver { <init>(...); }
+

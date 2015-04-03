@@ -22,13 +22,14 @@ $(function() {
   // Parse's "Object" is analogous to Backbone's "Model"
   // ----------
   // Our basic Todo model has `content`, `order`, and `done` attributes.
-  var Todo = Parse.Object.extend("Gnomes", {
+  	var Todo = Parse.Object.extend("testing", {
+//  var Todo = Parse.Object.extend("Gnomes", {
     // Default attributes for the todo.
     defaults: {
       content: "empty todo...",
       done: false,
-//	  manual:false,
-//	  QR:false,
+	  moreInfo: "more info text",
+	  type: "type",
     },
 
     // Ensure that each todo created has `content`.
@@ -42,30 +43,29 @@ $(function() {
     finish: function() {
       this.save({done: !this.get("done")});
     }
-	, //MK added
-	tincanCreate: function() {
-	  	var username = Parse.User.current().attributes.username;
-		var email = Parse.User.current().attributes.email;
-		var checklistItem = this._serverData.content;	
-		if (this._serverData.type==="manual") { console.log("This is a manual item")}
-		if (this._serverData.type==="qr") {console.log("This is a QR code item")}
-		if (this._serverData.type==="nfc") {console.log("This is an NFC item")}
-		
-		// MK initial test
-//		tincan.sendStatement({
-//				actor: {name: username, mbox: email},
-//				verb: {id: "http://adlnet.gov/expapi/verbs/completed", display: {und: "completed"}},
-//				target: {
-//					id: "http://www.torrancelearning.com/xapi/gnome",
-//					definition: {
-//						name: {und: checklistItem},
-//						description: {und: "Right now, this is a manual checklist item."},
-//					}					
-//				}
-//			}
-//		);		
-	}
-	
+//	, //MK added
+//	tincanCreate: function() {
+//	  	var username = Parse.User.current().attributes.username;
+//		var email = Parse.User.current().attributes.email;
+//		var checklistItem = this._serverData.content;	
+//		if (this._serverData.type==="manual") { console.log("This is a manual item")}
+//		if (this._serverData.type==="qr") {console.log("This is a QR code item")}
+//		if (this._serverData.type==="nfc") {console.log("This is an NFC item")}
+//		
+//		// MK initial test
+////		tincan.sendStatement({
+////				actor: {name: username, mbox: email},
+////				verb: {id: "http://adlnet.gov/expapi/verbs/completed", display: {und: "completed"}},
+////				target: {
+////					id: "http://www.torrancelearning.com/xapi/gnome",
+////					definition: {
+////						name: {und: checklistItem},
+////						description: {und: "Right now, this is a manual checklist item."},
+////					}					
+////				}
+////			}
+////		);		
+//	}
   });
 
   // This is the transient application state, not persisted on Parse
@@ -73,7 +73,7 @@ $(function() {
     defaults: {
       filter: "all"
     }
-  });
+  }); //end Todo object/model
 
   // Todo Collection
   // ---------------
@@ -121,9 +121,9 @@ $(function() {
 
     // The DOM events specific to an item.
     events: {
-      "click .finishBtn"              	: "toggleDone",
-      "click .unique"              		: "toggleDone",
-      "click .view"             		: "popup",
+      "click .finishBtn"            : "toggleDone",
+      "click .unique"              	: "toggleDone",
+	  "click .accordion-drop"		: "accordionDrop",
     },
 	
     // The TodoView listens for changes to its model, re-rendering. Since there's
@@ -133,59 +133,67 @@ $(function() {
  //     _.bindAll(this, 'render', 'close', 'remove');
       _.bindAll(this, 'render', 'remove');
       this.model.bind('change', this.render);
-      this.model.bind('destroy', this.remove);
+      //this.model.bind('destroy', this.remove);
     },
+	
+	accordionDrop: function() {
+	  var element = $(this.el);
+	  if (element.hasClass('open')) {
+		  element.removeClass('open');
+		  element.find('li').removeClass('open');
+		  element.find('ul').slideUp(200);
+	  }
+	  else {
+		  element.addClass('open');
+		  element.children('ul').slideDown(200);
+		  element.siblings('li').children('ul').slideUp(200);
+		  element.siblings('li').removeClass('open');
+		  element.siblings('li').find('li').removeClass('open');
+		  element.siblings('li').find('ul').slideUp(200);
+	  }
+	},
 	
 	popup: function() {
 		if (!window.cordova) {alert(this.model.get('moreInfo'))}
-		navigator.notification.confirm(
-			this.model.get('moreInfo'),  // message
-			function() {},         // callback
-			'xAPI Gnome',            // title
-			['Close', 'More']                  // buttonName
-		);
+		else {
+		  navigator.notification.confirm(
+			  this.model.get('moreInfo'),  // message
+			  function() {},         // callback
+			  'xAPI Gnome',            // title
+			  ['Close', 'More']                  // buttonName
+		  );
+		}
 	},
 	
     // Re-render the contents of the todo item.
     render: function() {
       $(this.el).html(this.template(this.model.toJSON()));
 	  // $('.sortable').sortable(); // MK added (jquery.sortable.js)
+	  $(this.el).addClass('has-sub');
+	  $('#main-list li.active').addClass('open').children('ul').show();
 
-	  //MK added - assigns classes to items flagged "true" in Parse for styling and JS hooks.
-		if (this.model.get('type')==="manual" && this.model.get('done')===false) { 
-			$('<input>').attr({type:'checkbox', class:'finishBtn'}).appendTo(this.el);
-		}	 
+//		if (this.model.get('type')==="manual" && this.model.get('done')===false) { 
+//			$('<input>').attr({type:'checkbox', class:'finishBtn'}).appendTo(this.el);
+//		}	 
 		 
 		if (this.model.get("done")===true) {
 			$(this.el).addClass("completed");
 		}
-	  
-		var typeClasses = {
-        	"manual": "manual",
-   			"qr": "qr",
-   			"nfc": "nfc",
-			"beacon": "beacon",
-			"video":"video",
-		};
-	
-		for (var key in typeClasses) {
-			if (typeClasses.hasOwnProperty(key)) {
-				if (this.model.get("type")===key) {
-					this.$(".unique").val(this.model.get('uniqueID'));	
-					$(this.el).addClass(typeClasses[key]);
-				}
-			}
-		}
+		
+//		this.$(".unique").val(this.model.get('uniqueID'));	
+//		$(this.el).addClass(this.model.get("type"));	
 		
 		var iconClasses = {
-         	"done": "fa-check-square-o",
-			"manual":"fa-square-o",
-   			"qr": "fa-qrcode",
-   			"nfc": "fa-rotate-90 fa-wifi",
-			"beacon": "fa-rotate-90 fa-wifi",
-			"video":"fa-video-camera",
-			"url":"fa-link",
-			
+         	"done": 	"fa-check-square-o",
+			"manual":	"fa-square-o",
+   			"qr": 		"fa-qrcode",
+   			"nfc": 		"fa-rotate-90 fa-wifi",
+			"beacon": 	"fa-rotate-90 fa-wifi",
+			"video":	"fa-video-camera",
+			"url":		"fa-link",
+			"freeform":	"fa-comment",
+			"question":	"fa-question-circle",
+			"course":	"fa-external-link",
 		};		
 		for (var key in iconClasses) {
 			if (iconClasses.hasOwnProperty(key)) {
@@ -202,21 +210,45 @@ $(function() {
 			className : "autolinks"
 		} );
 		
-		var listContent = $(this.el).html();
-		listContent = autolinker.link( listContent );
-		$(this.el).html(listContent);
+		var listContent = autolinker.link( $(this.el).find('.more-info-text').html() );
+		$(this.el).find('.more-info').html(listContent);
 		
-      return this;
+      	return this;
     }, // end render function
 	
     // Toggle the `"done"` state of the model.
     toggleDone: function() {
    		this.model.finish();
 		$(this.el).removeClass('manual');
-        navigator.notification.vibrate(100);        
-		this.model.tincanCreate();
+		if (window.cordova) {
+			navigator.notification.vibrate(100);    
+		}
+		this.tincanCreate();
     },
-  });
+	
+	tincanCreate: function() {
+	  	var username = Parse.User.current().attributes.username;
+		var email = Parse.User.current().attributes.email;
+		var checklistItem = this._serverData.content;	
+		if (this._serverData.type==="manual") { console.log("This is a manual item")}
+		if (this._serverData.type==="qr") {console.log("This is a QR code item")}
+		if (this._serverData.type==="nfc") {console.log("This is an NFC item")}
+		
+		// MK initial test
+//		tincan.sendStatement({
+//				actor: {name: username, mbox: email},
+//				verb: {id: "http://adlnet.gov/expapi/verbs/completed", display: {und: "completed"}},
+//				target: {
+//					id: "http://www.torrancelearning.com/xapi/gnome",
+//					definition: {
+//						name: {und: checklistItem},
+//						description: {und: "Right now, this is a manual checklist item."},
+//					}					
+//				}
+//			}
+//		);		
+	}	
+  }); // end TodoView
 
   // The Application
   // ---------------
@@ -243,19 +275,27 @@ $(function() {
     initialize: function() {
       var self = this;
 
-      _.bindAll(this, 'scanQR', 'nfcListen', 'onNdef', 'decodePayload', 'refreshData', 'addOne', 'addAll', 'addSome', 'render', 'logOut');
+      _.bindAll(this, 'scanQR', 'initCordovaPlugs', 'onNdef', 'decodePayload', 'refreshData', 'addOne', 'addAll', 'addSome', 'render', 'logOut');
 
       // Main todo management template
       this.$el.html(_.template($("#manage-todos-template").html()));
-      
-	  $('.title h1').html(Parse.User.current().attributes.username + "'s checklist");
+	  
       // Create our collection of Todos
       this.todos = new TodoList;
 
       // Setup the query for the collection to look for todos from the current user
       this.todos.query = new Parse.Query(Todo);
       this.todos.query.equalTo("user", Parse.User.current());
-        
+	  // Could probably work with the above to have an "admin" version to switch between different users' lists.
+	  
+	  var testingTitle = this.todos.query.equalTo("className").className;
+	  if (testingTitle === "testing") {
+		  $('.title h1').html(testingTitle);
+		}
+	  else {
+		  $('.title h1').html(Parse.User.current().attributes.username + "'s checklist");
+	  }
+	  
       this.todos.bind('add',     this.addOne);
       this.todos.bind('reset',   this.addAll);
       this.todos.bind('all',     this.render);
@@ -265,9 +305,105 @@ $(function() {
 	  
       state.on("change", this.filter, this);
 	  
-	  document.addEventListener('deviceready', this.nfcListen, false);
+	  document.addEventListener('deviceready', this.initCordovaPlugs, false);
 	  
     }, // end initialize
+	
+	initCordovaPlugs: function() {
+		console.log("initCordovaPlugs");
+		this.rangeBeacons();
+		this.nfcListen();
+	},
+	
+	rangeBeacons: function() {
+		console.log("rangeBeacons started");
+		var regions = [
+			// Estimote Beacon factory UUID.
+			{uuid:'B9407F30-F5F8-466E-AFF9-25556B57FE6D'},
+			// Gnomes:
+			{uuid:'206a6e55-9ed9-4216-8559-2027ce3447c4'},
+		];
+	
+		// Dictionary of beacons.
+		var beacons = {};		
+		window.locationManager = cordova.plugins.locationManager;
+		var delegate = new locationManager.Delegate();
+		
+		delegate.didRangeBeaconsInRegion = function(pluginResult) {
+		  for (var i in pluginResult.beacons) { // Insert beacon into table of found beacons.
+			  var beacon = pluginResult.beacons[i];
+			  beacon.timeStamp = Date.now();
+			  var key = beacon.uuid + ':' + beacon.major + ':' + beacon.minor;
+			  beacons[key] = beacon;
+			  if (beacon.minor === "1") {
+				  console.log("beacon 1 in range");
+				  beacon1Action(beacon);
+			  };
+		  }
+
+		};
+		
+		var beacon1Activated = 0;
+		
+		function beacon1Action(beacon) {
+			beacon1Activated++;
+			if (beacon1Activated === 1) {
+				alert("Beacon " + beacon.minor + " found");
+			}
+		};
+		
+		locationManager.setDelegate(delegate);
+		locationManager.requestAlwaysAuthorization(); // in case this ever goes to iOS 8
+
+		for (var i in regions) {
+		  var beaconRegion = new locationManager.BeaconRegion(
+			  i + 1,
+			  regions[i].uuid);
+  
+		  // Start ranging.
+		  locationManager.startRangingBeaconsInRegion(beaconRegion)
+			  .fail(console.error)
+			  .done();
+		}
+		
+		
+		// everything from here down can go? ------------------------------------>>>>>>
+		
+//		var updateTimer = null;
+//		//updateTimer = setInterval(scanForBeacons, 1500);
+//		
+//		var object = {};
+//		
+//		_.extend(object, Parse.Events);
+//		
+//		object.on("sendMsg", function(msg) {
+//		  alert(msg);
+//		});
+//		
+//		//object.trigger("alert", "an event");		
+//		
+//		
+//		//scanForBeacons();
+//		function scanForBeacons() {
+//			//console.log(beacons);
+//			
+//		  $.each(beacons, function(key, beacon) {
+//			//if (beacon.proximity === "ProximityImmediate" || beacon.proximity === "ProximityNear") {
+//			if (beacon.proximity === "ProximityNear") {
+//			  if (beacon.minor === "1") {
+//				console.log("You are at Matt's desk." ); 
+//				object.trigger("sendMsg", "You are at Matt's desk.");
+//		  		//object.off("alert");
+//				
+//				//alert("You are at Matt's desk.");
+//				}
+//			}
+//		  });
+//		}
+
+		
+
+	},
 	
 	nfcListen: function() {
 		nfc.addNdefListener(
@@ -281,7 +417,6 @@ $(function() {
 	},
 	
 	onNdef: function (nfcEvent) {
-        //navigator.notification.vibrate(100);        
 		var uniqueID = this.decodePayload(nfcEvent.tag.ndefMessage[0]);
 			nfcListItem = this.$(".nfc p"),
 			nfcItems = this.$(".nfc .unique");
@@ -291,7 +426,6 @@ $(function() {
 				nfcItems[i].click();
 			}				
 		};
-		
     },
 	
 	decodePayload: function (record) {
@@ -319,20 +453,22 @@ $(function() {
 	//MK added QR scanning
 	scanQR: function() {
 		if (!window.cordova) {alert("Sorry, this needs the mobile app to access the QR reader.")}
-		cordova.plugins.barcodeScanner.scan(
-			function (result) {
-				var scanQRText = result.text,
-					qrListItem = this.$(".qr p"),
-					qrItems = this.$(".qr .unique");
-				for (i=0; i < qrItems.length; i++) {
-					var qrItemText = qrItems[i].value;
-					if (scanQRText === qrItemText) {
-						qrItems[i].click();
-					}				
-				};
-			}, 
-			function (error) { alert("Scanning failed: " + error); }		
-		);
+		else {
+		  cordova.plugins.barcodeScanner.scan(
+			  function (result) {
+				  var scanQRText = result.text,
+					  qrListItem = this.$(".qr p"),
+					  qrItems = this.$(".qr .unique");
+				  for (i=0; i < qrItems.length; i++) {
+					  var qrItemText = qrItems[i].value;
+					  if (scanQRText === qrItemText) {
+						  qrItems[i].click();
+					  }				
+				  };
+			  }, 
+			  function (error) { alert("Scanning failed: " + error); }		
+		  );
+		}
 	},	
 	
 	refreshData: function() {
@@ -483,9 +619,21 @@ $(function() {
     // the App already present in the HTML.
     el: $("#todoapp"),
 
+    events: {
+	  "click #open-left"	: "menu",
+	},
+
     initialize: function() {
       this.render();
     },
+		
+	menu: function() {
+	  if( snapper.state().state=="left" ){
+		  snapper.close();
+	  } else {
+		  snapper.open('left');
+	  }
+	},
 
     render: function() {
       if (Parse.User.current()) {
